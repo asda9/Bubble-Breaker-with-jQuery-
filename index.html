@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head> <title> Bubble Breaker! </title>
+		<link rel = "stylesheet" type = "text/css" href = "bubblestyle.css" /> 	
+		<link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
+		
+		<script src="jquery-3.2.1.js"></script>
+
+	</head>
+	
+	<body> 
+				
+		<br/>
+		<h1 class = "mainheading text"> Welcome to Bubble Breaker! </h1>	
+		<div id="instructions"> 
+			<b>The objective</b>: Burst as many bubbles as you can to get as many points as you can
+			in as little time as possible. 
+			Single click on a bubble to find out how many points you could get.
+			Click it again (or double click) to burst that bubble!
+			The bigger the sets of bubbles you burst at a time, the more points you get! 
+		</div>
+		
+		<div id="bubblegrid"> 
+			<script type = "text/javascript" src = "bubbles.js"> </script>
+
+			<script src = "timer.js"> </script>
+			<script src = "score.js"> </script> 
+
+
+
+			<script>
+				//makes the grid of randomly coloured bubbles - each image is inside of a span element. The grid of spans are within the div element
+				var bubblenumb1to5; //a random number from 1 to 5
+				for (var i=0; i<(sizeofgrid); i++) { 
+					bubblenumb1to5 = Math.floor(Math.random()*5) + 1;
+	
+					testspan = "<span id=\"" + i +"\" class= \"tspan\"> </span>";
+					testerst = "<img id = \"image" + i + "\" src = \"" + bubblenumb1to5 + ".png\" class = \"bubbleclass\" name = \"" + bubblenumb1to5 + "\"> </img>";
+	
+					$("#bubblegrid").append(testspan);
+	
+					$("#"+i).append(testerst);
+					$("#image"+i).css("opacity", "0.78");	
+				}			
+			</script>
+
+
+		</div>
+		
+		<br/>
+		
+		<div id = "gametext">
+			<span id = "left-text">
+				<p class = "text"> Elapsed Time: <span id = "timer"> 0 </span> seconds</p> 
+
+				<br/>
+		
+				<p class = "text" id = "scoreinterm"> You could earn <span id = "scoreincrease"> 0 </span> points with that bubble break!</p>
+
+				<br/>
+
+				<p class = "text"> Total Score: <span id = "totalscore"> 0 </span> points </p>
+			</span>
+			
+			<span id = "buttonspan">
+				<button id="newgamebutton"> New Game </button>
+			</span>	
+		</div>
+	</body>
+</html>

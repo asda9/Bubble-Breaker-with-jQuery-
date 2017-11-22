@@ -1,0 +1,104 @@
+/* bubblestyle.css - external style sheet for index.html */
+
+
+body {
+	background: black;
+}
+
+
+h1.mainheading {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.text {
+	font-family: Aclonica, Garamond, Georgia, serif;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	color: white;
+}
+
+
+.bordered {
+	border: 1px dashed black;
+}
+
+
+.notbordered {
+	border:none;
+}
+
+
+img {
+	background: black;
+	margin: 0px;
+}
+
+
+.tspan {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	margin-left: 0.5px;
+	margin-right: 0.5px;
+	margin-top: -1.5px;
+	margin-bottom: -1.5px;
+	border: 2px solid black;
+}
+
+
+div {
+	//background: grey; 
+	margin-left: auto;
+	margin-right: auto;
+	height: 350px;
+	width: 680px;
+}
+
+
+#instructions {
+	margin-top: 10px;
+	height: 60px;
+	margin-bottom:10px;
+	font-family: Garamond;
+	font-size: 107%;
+	color: white;
+}
+
+
+#left-text {
+	width: 450px;
+	display: inline-block;
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+
+
+#buttonspan {
+	margin-top: -50px;
+	width: 200px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+button {
+	color: grey;
+	border-radius: 30px;
+	margin-left: 20px;
+	padding:20px;
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom:40px;
+	text-align: centre;
+}
+
+
+#scoreinterm {
+	opacity: 0; 
+	margin-top: -5px;
+	margin-bottom:-5px;
+}
+
